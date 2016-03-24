@@ -1,0 +1,243 @@
+El temario básico es:
+    Sintaxis básica de Javascripts
+    Estructuras de Control
+    Introducción a JQuery
+    Eventos
+    Animación y efectos
+    Mejorando las imágenes
+    Mejorando la Navegación
+    Formularios avanzados
+    Creación de interfaces
+    Introducción A Ajax
+    Trabajo con JQuery
+    Depuración de código
+
+Introducción:
+JavaScript es un programa de propósito específico y no de propósito general como lo es Java, no tiene relación alguna tampoco con ese lenguaje; en consecuencia, tiene un objetivo concreto que es el de ejecutarse en un navegador. Aplicaciones tales como googles docs tienen componentes que se ejecutan en javascript.
+Asimismo Javascript se ejecuta de forma local, que significa eso el tiempo de respuesta es inmediato ya que no tiene intermediarios (base de datos x ejem).
+Javascript le proporciona interacción a una web, y complementa a las otras dos tecnologías básicas que participan al momento de realizar un website (html5 y css).
+
+
+Historia:
+Fue creado por NetScape, en sus inicios existian muchas incompatibilidades en las páginas web dependiendo del navegador, ya que cada navegador entendía los efectos de forma diferentes, aunque si bien es cierto se avanzó en su estandarización, aún existen ciertas diferencias.
+
+
+Javascript puede estar como un archivo externo, insertado en el head, o en una sección de código específico.
+JavaScript siempre es lineal se lee de arriba hacia abajo
+Javascript trabaja con sentencias, es decir pequeños trozos de código que se reconocen por un punto y coma, también dispone de funciones predefinidas que sirven de ayuda al programador.
+Existen funciones y estas se reconocen por un parentesis : alert(); document.write(); también se pueden crear sus propias funciones.
+Los datos están clasificados, existiendo 3 tipos básicos: númericos, cadenas (strings) booleanos (booleans); sin embargo en su declaración se hace tan sólo con var.
+JavaScript trabaja con variables, las cuales son espacios en la memoria del ordenador (RAM) donde se almacenará un valor que podrá cambiar la ejecución del programa.
+Respecto a las ventas alert, son ventanas de tipo modal, es decir que no se podrá realizar alguna acción hasta que se resuleva esta deteniendo el flujo.
+document.write ---> write: introduce un párrafo en html, se debe colocar en la posición que se desea que aparezca.
+
+
+Funciones predefinidas:
+    Number: Transforma a números.
+    prompt: sirve para la entrada de datos
+    isNaN(): significa no es un número, si el dato dentro de la función no es un número será verdadero.
+    Math=Nos puede ayudar con alguna operación matemática, usado en algunas ocasiones para obtener números aleatorios de 0 a 1 con Math.random() o Math.round() ---> que sirve para redondear números 
+
+Métodos:
+    focus(): cuando existen muchos elementos, el que tu selecciones aparecerá seleccionado por defecto, es usado comunmente en botones.
+    toLowerCase():Transforma toda la cadena a minúsculas
+    toUpperCase():Transforma toda la cadena a mayúsculas.
+    typeof: Nos indica el tipo de dato almacenado
+
+Arrays (v7)
+    Son un conjunto de elementos agrupados que tienen en comun que son de la misma característica.
+    Su declaración es: var articulos = new Array("zapatillas", "pantalon"); o var articulos=["zapatillas","pantalon","camisetas","calcetines"];
+    Los Arrays se identifican a través de su indice, empezando con el primer artículo con el número 0 y se acceden a el nombrado el array y en corchetes a la posición: articulos[0], estamos llamando a las zapatillas.
+    
+    Las propiedades del Array son:
+        lenght: te dice la longitud o numero de elementos
+    
+    Los métodos del Array son:
+        push: Agrega un elemento más, pero lo agrega al final del array
+        unshift: Agrega un elemento más, pero lo agrega al inicio del array
+        pop: Elimina un elemento del array al final
+        shift: Elimina un elemento del array al inicio
+
+/*************************/
+La programación orientada a Objetos
+    Anteriormente antes la programación estaba orientada hacia los procedimientos, y el problema radicaba en que cuando se debía hacer alguna modificación era un trabajo titánico, más aun cuando no era el programador original.
+    Es así que la comunidad de programación decidió faciliar esto asimilando lo que ocurre en la vida real, entonces; en la vida real tenemos objetos y todos ellos tienen algo en común:
+        
+        
+        Instancia: el objeto en si es un modelo mental como un coche, sabemos que puede tener; sin embargo, lo que realmente tenga lo sabremos cuando definamos claramente que es, es decir, lo instanciemos.
+        atributos o características: ancho, altura, color--->responde a la pregunta (¿Cómo es?)
+        métodos o capacidades: movimiento, frenado, etc.--->responde a la pregunta (¿Qué puede hacer?)
+    
+    Asimismo existe la nomenclatura del punto, que nos sirve para modificar un atributo especifo de la instancia
+    
+        instancia.atributo="";
+        
+    ejemplo si tuvieramos un coche:
+    
+        coche.color="morado";
+   
+   Esto aplica también para los métodos que  disponen las funciones:
+        document.write();
+    
+    
+/*******************************************/
+
+Condicionales
+if: es considerado una estructura de control de flujo, ya que puede modificar el flujo en función de que se cumpla una condición o no. Se hace referenci al y =&& y a o=||
+
+La sintaxis es:
+
+if(si es para uno solo){}
+
+if(){}else{}---> si al cumplir una condición inmediatamente recae en una acción
+
+
+if(){}else if(){}----> si existen muchas condiciones, se denomina condicionales anidadas
+
+
+
+/******************************************/
+
+BUCLES
+
+
+Existen dos tipos de bucles:
+
+Determinados: for()
+Indeterminados: while() y Do while
+
+
+    While: Se utiliza igual que la sintaxis de los condicionales, este se ejecuta una indeterminada cantidad de veces hasta que se cumpla una condición dada.
+    Do while: Garantiza que al menos una vez el código se ejecute
+
+
+
+
+/********************************/
+
+FUNCIONES V21
+Las funciones son el pan y mantequilla de la programación en javascript
+
+function nombre_funcion(){}
+
+
+Definición:
+
+Una función es creada por una expresión que inicia con una palabra que identifica a la función. Las funciones tienen un conjunto de parámetros y un cuerpo, el cual contiene las sentencias que serán ejecutadas cuando la función sea llamada. El cuerpo de la función siempre debe estar encerrada entre llaves, aún cuando solo consiste en una sola sentencia.
+Una función puede tener múltiples parámetros o ninguno.
+Algunas funciones producen un valor, tal como la potencia: 
+
+    var power= function(base, exponent){
+        var result=1;
+        for(var count=0; count <exponent; count++){result*=base;
+        return result;},
+    };
+    
+Una sentencia return  determina que la función devolverá un valor.
+
+
+
+Parámetros: Los parámetros en una función se comportan como una variable regular, pero su valor inicial las da el que llama la función, no el código en la función en si mismo.  Una importate propiedad de las funciones es que las variables creadas dentro de ellas incluidos sus parámetros son locales para la función, esto significa que cada vez que llamemos a la función está será declarada e inicializada y no afecta a las demás variables generales.
+
+JavaScript  no solo distingue entre una variable local y general, además las funciones pueden ser creadas dentro de otras funciones.
+
+
+Un ejemplo de declaración de funcion
+
+    function square(x){return x*x;}
+
+Otra forma
+
+    console.log("The future says:", future());
+
+    function future(){return "We still have no flying cars";}
+Este código trabaja, aún cuando la función está definida debajo.
+
+
+Javascript hace un flujo de arriba hacia abajo en la lectura del código; sin embargo, hace una excepción en términos de la declaración de funciones, estás pueden ser declaradas antes o despues de su uso.
+
+Eventos------>V24
+Se pueden definir como desencadenantes de una acción y permiten en líneas generales interactuar con una página web, un evento es cuando el usuario pasa el ratón sobre una imagen o hace click en un enlace. Enumeramos los eventos más importantes
+
+
+
+    onblur:Deseleccionar el elemento, se aplica en (<button>, <input>, <label>,<select>,<textarea>,<body>)
+    onchange:Deseleccionar un elemento que se ha modificado, (<input>,<select>,<textarea>)
+    onclick: pinchar y soltar el ratón, (todos los elementos).
+    ondblclick; pinchar dos veces seguidas con el ratón, (todos los elementos).
+    onfocus: seleccionar un elemento, (<button>,<input>,<label>, <select>,<textarea>,<body>)
+    onkeydown: pulsar un tecla (sin soltar), (elementos en formulario y <body>).
+    onkeypress: pulsar una tecla (elementos en formulario y <body>)
+    onkeyup: soltar una tecla pulsada (elementos en formulario y <body>)
+    onload: la páigna se ha cargado completamente, (<body>)
+    onmousedown: pulsar (sinsoltar) u botón del ratón, (todos los elementos)
+    onmousemove: mover el raton, (todos los elementos)
+    onmouseout: el raton sale del elemento o pasa por encima de otro, (todos los elementos)
+    onmouseover: el ratón entra en el elemento o pasa sobre el, (todos los elementos)
+    onmouseup: soltar el botón que estaba pulsado en el ratón, (todos los elementos)
+    onreset: inicializar el formulario (borrar todos sus datos), (<form>)
+    onresize: se ha modificado el tamaño de la ventana del navegador, (<body>)
+
+/*******************************************************************************/
+JQUERY
+ Definición: es una librería que nos ayuda en la creación de tareas frecuentes a la hora de programar en JavaScript como por ejemplo:
+    Seleccionar elementos
+    Agregar nuevo contenido
+    Ocultar y mostrar elementos de una web
+    Validación de formularios
+    Efectos visuales vistosos.
+    
+Jquery no es la única que lo hace, existen muchas más como:
+    protype
+    mootools
+    dojo
+    Yahoo User Interface
+
+Jequery es relativamente pequeña y ligera (100kb aprox), es amigable con css, esta ampliamente testeada, es gratis, tiene un gran comunidad de soporte y tiene numerosos plugins que realizan las tareas más frecuentes.
+
+DOM: Modelo de Objetos del Documento, el DOM está muy ligado al jquery, pues que significa, que el navegador memoriza un modelo del documento, es decir como está diagramado el esquema de la web que hagamos.
+
+/**********/
+Seleccionando elementos en Jquery
+    document.getElementById()
+    document.getElementByTagName()
+
+Un objeto Jquery se define como:
+    $(".contacto"); -----> ya que contacto es una clase.
+
+
+Direrencias de Jquery y del DOM
+
+La librería Jquery provee loops automáticos además de realizar funciones encadenadas
+
+Agregando contenido con jquery:
+
+    .html(): Puede manipular etiquetas html con la posibilidad de reemplazar tipos de etiquetas
+    .text(): No manipula etiquetas sino parrafos y sustituye un texto por otro
+    .after(): Agrega un texto despues de la etiqueta
+    .append(): agrega un texto a continuación del contenedor seleccionado
+    .prepend(): Agrega un texto antes de la etiqueta
+    .before(): Antes del contenedor indicado agrega la etiqueta
+    
+Eliminando y reemplazando  Contenido V35
+
+    remove():
+    replaceWith: reemplaza una etiqueta html por otra
+
+Cambiando css con jquery
+
+    addClass():Agrega un estilo de clase.
+    removeClass(): Remueve una clase completa
+    toggleClass():Muy utilizada en checkbox mas no por los radiobutton.
+    
+    
+    css(): Esta propiedad tiene tres sintaxis:
+    
+        .css("propiedad css")
+        .css("propiedad_css",valor)
+        .css({"propiedad_css:valor","propiedad_css":"valor"})
+    
+    attr("atributo","valor")
+    removeAttr("atributo"): remueve atributos de una clase
+    
+    

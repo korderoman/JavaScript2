@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="iso-8859-1">
+        <title>Video 39</title>
+        <script src="jquery-2.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                document.getElementById("img1").addEventListener("mouseover",cambiar,false);
+                document.getElementById("img1").addEventListener("mouseout",devolver,false);
+                
+            });
+            
+            function cambiar(){
+                $("img").attr("src","images/fresa.jpg");
+                
+            }
+            
+            function devolver(){
+                $("img").attr("src","images/tux.png");
+            }
+        
+        </script>
+    </head>
+    <body>
+        <img src="images/tux.png" id="img1">
+        
+        
+    </body>
+    
+    
+    
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="iso-8859-1">
+        <title>v37</title>
+        <style>
+            #primer_parrafo{
+                background-color: #F00;
+            }
+            
+        </style>
+        <script src="jquery-2.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+               /* var colorFondo=$("#primer_parrafo").css("background-color","#00F");*/
+                $("p.destacado").css("border","2px dotted blue");
+                
+            });
+        </script>
+    </head>
+    
+    <body>
+        <p id="primer_parrafo">Primer Parrafo</p>
+        <p class="destacado">Parrafo destacado</p>
+        <p>Tercer parrafo</p>
+    
+    </body>
+
+
+</html>

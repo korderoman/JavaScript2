@@ -1,0 +1,59 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="asmo-708">
+        <title>Video 15</title>
+        <style>
+            #contenedor{
+                width: 25%;
+                background-color: #FFC;
+                margin: auto;
+                padding: 15px;
+                
+            }
+        
+        </style>
+        <script>
+        /* Ejemplo 1 del video */
+        /*
+        var meses= new Array("enero", "febrero", "marzo", "abril","mayo", "junio", "julio", "agosto","setiembre", "octubre", "noviembre", "diciembre");
+        var contador=0; 
+            
+            while(contador<meses.length){
+                document.write("<p>"+meses[contador]+"</p>");
+                contador++;
+            }
+        
+        */
+        
+        /*Ejemplo 2 del video */
+            
+         var nombre, edad, poblacion;
+            nombre=prompt("Introduce tu nombre por favor");
+                while(!isNaN(nombre)){nombre=prompt("Introduce un nombre válido");}
+            edad=parseInt(prompt("Introduce tu edad por favor"));
+                while(edad<=0 || edad>105 || isNaN(edad)){edad=parseInt(prompt("Introduce una edad valida"));}
+                
+            poblacion=parseInt(prompt("Introduce la población"));
+                while(isNaN(poblacion)){poblacion=parseInt(prompt("Introduce un Número"));}
+        
+        </script>
+    
+    
+    </head>
+    
+    <body>
+        <div id="contenedor">
+        
+            <p>Nombre:<script>document.write(nombre);</script></p>
+            <p>Edad:<script>document.write(edad);</script></p>
+            <p>Población:<script>document.write(poblacion);</script></p>
+        </div>
+    
+    
+    </body>
+
+
+
+
+</html>

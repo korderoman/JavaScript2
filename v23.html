@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="asmo-708">
+        <title>Video 23 Calculadora</title>
+        <script>
+            
+            /*Declaracion de funciones*/
+            function suma(num1,num2){
+                alert("La suma es: "+(num1+num2));
+            }
+            function resta(num1,num2){
+                alert("La resta es: "+(num1-num2));
+            }
+             function divide(num1,num2){
+                alert("La división es: "+(num1/num2));
+            }
+             function multiplica(num1,num2){
+                alert("La multiplicación es: "+(num1*num2));
+            }
+            
+            /*Declaracion de variables*/
+            
+            var repetir="si"
+            
+            /*Inicio del bucle*/
+            
+            do{
+            var operacion=prompt("Que operación desea realizar?").toLocaleLowerCase();
+            var num1=parseFloat(prompt("Ingrese el primer numero"));
+            var num2=parseFloat(prompt("Ingrese el segundo numero"));
+                        
+              if(operacion=="suma"){suma(num1,num2);}
+                else if(operacion=="resta"){resta(num1,num2);}
+                            else if(operacion=="dividir"){divide(num1,num2);}
+                                else if(operacion=="multiplicar"){multiplica(num1,num2);}
+                                    else{alert("Operación no contemplada");}
+                
+                repetir=prompt("Desea repetir?");
+            
+            
+            }while(repetir=="si");
+        </script>
+    
+    
+    </head>
+    <body>
+    
+    
+    </body>
+
+
+
+</html>

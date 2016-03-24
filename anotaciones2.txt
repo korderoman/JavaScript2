@@ -1,0 +1,99 @@
+Funcion Jquery Each()
+    Sirve para indicar  una ejecución a cada elemento
+
+objeto this: hace referencia al objeto jquery invocado por ejemplo el img
+    $("img").each(function(){ $(this).xxxxx}); el this está haciendo referencia al tipo de imagen que analice.
+    
+    la función each se aplica cuando hay que asignar varias tareas a un objeto
+    
+función anónima: como su nombre lo dice no tienen nombre y no se les puede llamar de la forma tradicional
+
+/****************************/
+EVENTOS JQUERY
+Un evento es el desencadenante de una acción, son los eventos los que proporcionan interacción a la página web
+
+Eventos de Raton:
+    click
+    dblclick
+    mousedown
+    mouseup
+    mouseover
+    mouseout
+    mousemove
+    
+Eventos de Teclado
+    keypress
+    keydown
+    
+Eventos de documentos
+    load
+    resize
+    scroll
+    unload
+    
+Eventos de formulario
+    submit
+    reset
+    change
+    focus
+    blur
+
+Bueno Jquery tiene una función a cada uno de esos eventos
+
+hover(): gestiona el elemento mouseover y mouse out
+toogle(): ha cambiado en la nueva version de javascript
+next(): luego de usar this, apunta al siguiente objeto (ver video 45)
+bind():permite almacenar eventos a más de uno a la vez  separados por espacio. (ver video 46)
+    $("#elem1").bind("click",datos,abrir);
+    stoppropagation
+  toogleClass: Cambia las clases en función de  evento  
+    
+Animaciones Jquery
+
+Mostrar u ocultar
+    show()
+    hide()
+    toogle()---->en vez de toogle ....click
+
+Aparecer - Desaparecer
+    fadeIn()
+    fadeOut()
+    fadeToggle()
+    fadeTo(): Deja el elemento con transparencia
+
+Deslizar
+    slideDown()
+    slideUp()
+    slideToggle()
+
+
+/********************************************/
+FUNCION ANIMATE()
+
+La función animate permite animar cualquier propiedad css que admita valores numéricos. Ejemplos:
+    margin-left
+    width
+    height
+    opacity
+
+funciones anidadas en animate
+
+
+/***********************/
+PLUGINS JQUERY
+Existen una diversidd de plugins, trataremos con con la libreria 
+jquery easing plugin
+
+hover()
+stop()
+preloader()
+
+
+
+/******************************************/
+FORMULARIOS
+Se accede a la información  de un elemento de formulario
+
+Siqueremos acceder a todos los puntos de un formulario se identifica por input, pero como objeto jquery es ":" ejemplo si queremos acceder a todos los elementos texto $(":text)(video 57)
+checked() sirve para verificar por casillas de texto
+

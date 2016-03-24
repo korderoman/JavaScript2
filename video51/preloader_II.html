@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+
+table{
+	text-align:center;
+	width:50%;
+	border:none;
+	margin:auto;
+}
+
+img{
+	padding:0 5px;
+}
+h1{
+	text-align:center;
+}
+
+</style>
+<script src="../jquery-2.2.1.min.js"></script>
+
+<script>
+    var foto_hover=["../images/1.jpg","../images/2.jpg","../images/3.jpg","../images/4.jpg"];
+
+   var imagenes=[]
+    for(var i=0; i<foto_hover.length;i++){
+        imagenes[i]=new Image();
+        imagenes[i].src=foto_hover[i];
+    }
+   $(document).ready(function() {
+		
+	
+						
+		$("img").each(function() {
+			
+			$(this).hover(cambiar , restaurar);
+            
+        });
+        	
+	function cambiar(e){
+		if(e.target==img1){
+            $("#img1").attr("src",imagenes[0].src);
+        }
+        else if(e.target==img2){
+            $("#img2").attr("src",imagenes[1].src);
+        }
+        else if(e.target==img3){$("#img3").attr("src",imagenes[2].src);}
+        else if(e.target==img4){$("#img4").attr("src",imagenes[3].src);}
+	
+	
+	}
+	
+	function restaurar(e){
+		if(e.target==img1){
+            $("#img1").attr("src","../images/imgs2/1.jpg");
+        }
+        else if(e.target==img2){
+            $("#img2").attr("src","../images/imgs2/2.jpg");
+        }
+        else if(e.target==img3){$("#img3").attr("src","../images/imgs2/3.jpg");}
+        else if(e.target==img4){$("#img4").attr("src","../images/imgs2/4.jpg");}
+		
+			
+	}
+  });
+</script>
+</head>
+
+<body>
+<h1>Galería de imágenes</h1>
+<table width="100%" border="0">
+  <tr>
+    <td><img src="../images/1.jpg" id="img1" ></td>
+    <td><img src="../images/2.jpg" id="img2" ></td>
+    <td><img src="../images/3.jpg" id="img3" ></td>
+    <td><img src="../images/4.jpg" id="img4" ></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="asmo-708">
+        <title>Video 13</title>
+        <script>
+            var num1=parseInt(prompt("Introduce el primer número"));
+            var num2=parseInt(prompt("Introduce el segundo número"));
+           
+            if(!isNaN(num1) && !isNaN(num2)){
+            
+            var operacion=prompt("Qué operación desea realizar: suma/resta/multiplicacion/division").toLocaleLowerCase();
+            
+            if(operacion=="suma"){alert(num1+num2);}
+                else if(operacion=="resta"){alert(num1-num2);}
+                    else if(operacion=="multiplicacion"){alert(num1*num2);}
+                        else if(operacion=="division"){alert(num1/num2);}
+                            else{alert("No ha seleccionado ninguna de las anteriores");}}
+            else{alert("No ingresó un número");}
+           
+        
+            
+        </script>
+    </head>
+    
+    
+    <body>
+    
+    
+    
+    </body>
+
+
+
+</html>

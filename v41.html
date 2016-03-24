@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="iso-8859-1">
+        <title>Video 41</title>
+        <style>
+            
+            img {margin: 20px;
+            width: 20%;}
+            
+            #contenedor{
+                width: 75%;
+                margin: auto;
+            }
+        
+        
+        
+        </style>
+        <script src="jquery-2.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                document.getElementById("miboton").addEventListener("click", cambiar,false);
+            });
+            
+            function cambiar(){
+                //$("img").fadeOut(1000).fadeIn(1000).width("310");
+                $("img").each(function(){
+                    $(this).fadeOut(1000).fadeIn(1000).width("310");
+                });
+            }
+        
+        </script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <img src="images/tux.png">
+            <img src="images/tux.png">
+            <img src="images/tux.png">
+            <img src="images/tux.png">
+        </div>
+        <div id="boton">
+        
+            <input type="button" value="Acción" id="miboton">
+        
+        </div>
+    
+    
+    </body>
+          
+
+
+
+
+</html>

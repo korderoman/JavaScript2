@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="iso-8859-1">
+        <title>Video 31</title>
+        <style>
+            #aviso{
+                
+                background-color: black;
+                color: white;
+                font-size: 24px;
+            }
+        
+        
+        
+        </style>
+        <script src="jquery-2.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                    $("#carrete img").hide();
+                
+                $("#aviso").width(500).height(500).text("Vendido").hide().fadeIn(5000);
+                
+                
+            });    
+        
+        </script>
+    </head>
+    <body>
+        <div id="carrete">
+            <img src="images/tux.png" width="250" height="170">
+            &nbsp;
+            <img src="images/tux.png" width="250" height="170">
+            &nbsp;
+            <img src="images/tux.png" width="250" height="170">
+            &nbsp;
+            <img src="images/tux.png" width="250" height="170">
+            &nbsp;
+        </div>
+        <div id="aviso">
+            ¡COMPRA!
+        
+        
+        
+        
+        
+        </div>
+   <!-- <script>
+            var imagenes=document.querySelectorAll("#carrete img");/* La variable se transforma en un array automáticamente*/
+            
+            
+            for(var i=0; i<imagenes.length;i++){
+                imagenes[i].style.visibility="hidden";
+            }
+        
+        </script >
+-->
+    
+    </body>
+
+</html>

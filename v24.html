@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="asmo-708">
+        <title>video 24</title>
+        <style>
+            .numero{
+                width: 60px;
+                height: 60px;
+                
+            }
+            
+            .igual{
+                width:220px;
+                height: 60px;
+            }
+            
+            table{margin: auto;}
+            
+            .color_display{
+                
+                height: 30px;
+                background-color: #000;
+                border: medium #fff;
+                font: "Space Age";
+                color:#0fc;
+                font-size: 18px;
+                text-align: right;
+                
+            }
+        
+        </style>
+        
+        <script>
+            /*La calculadora está incluida desde el vídeo 24 al 28*/
+            var cifra="";
+            var acumulado=0;
+            var sumar=false;
+            var restar=false;
+            var p_operacion=true;
+            
+            function display_numeros(numero){
+              /*Aquí ocurre una especie de bucle*/ document.getElementById("display").value=cifra+numero;
+                cifra=document.getElementById("display").value;
+            }
+            
+            function suma(){
+                if(resta==true){
+                    acumulado=acumulado-parseFloat(cifra);
+                    document.getElementById("display").value=acumulado /*esta es la pantalla*/
+                }else{
+                    acumulado=acumulado+parseFloat(cifra);
+               /*el valor de display es el valor de acumulado*/
+                document.getElementById("display").value=acumulado;}
+                cifra="";
+                sumar=true;
+                restar=false;
+                p_operacion=false;
+                }
+            
+            function resta(){
+                if(p_operacion==false){    
+                if(sumar==true){
+                    acumulado=acumulado+parseFloat(cifra);
+                    
+                }else {acumulado=document.getElementById("display")-parseFloat(cifra);
+                document.getElementById("display").value=acumulado;}
+                
+                 
+            }else { acumulado=parseFloat(cifra);
+                    p_operacion=false;}
+                cifra="";
+                sumar=false;
+                restar=true;}
+            function multiplicar(){}
+            function dividir(){}
+            function igual(){
+                if(sumar==true){
+                    document.getElementById("display").value=acumulado+parseFloat(cifra);
+                } else if(restar==true){
+                    document.getElementById("display").value=acumulado-parseFloat(cifra);                       }
+            }
+        
+        </script> 
+    </head>
+    <body>
+        <table width"15%" border="1">
+            <tr>
+                <td colspan="4" align="center">
+                <input type="text" name="display" id="display" class="color_display" size="25">
+                </td>
+                
+            
+            </tr>
+            <tr>
+                <td><input type="button" class="numero" name="num1"  id="num1"  value="1" onclick="display_numeros(1)"> </td>
+               <td><input type="button" class="numero" name="num2" id="num2"  value="2" onclick="display_numeros(2)"> </td>
+                <td><input type="button" class="numero" name="num3" id="num3"  value="3" onclick="display_numeros(3)"> </td>
+               <td><input type="button" name="suma" class="numero" id="suma" value="+" onclick="suma()"> </td>
+            
+            </tr>
+            <tr>
+                 <td><input type="button" class="numero" name="num4" id="num4"  value="4" onclick="display_numeros(4)"> </td>
+               <td><input type="button" class="numero" name="num5" id="num5"  value="5" onclick="display_numeros(5)"> </td>
+                <td><input type="button"  class="numero" name="num6"  id="num6"  value="6" onclick="display_numeros(6)"> </td>
+               <td><input type="button" name="resta" id="resta" class="numero" value="-" onclick="resta()"> </td>
+            
+            </tr>
+            <tr>
+                 <td><input type="button" class="numero" name="num7" id="num7" value="7" onclick="display_numeros(7)"> </td>
+               <td><input type="button" class="numero" name="num8" id="num8" value="8" onclick="display_numeros(8)"> </td>
+                <td><input type="button" class="numero" name="num9" id="num9" value="9" onclick="display_numeros(9)"> </td>
+               <td><input type="button" class="numero" name="multiplicacion" id="multiplicacion" value="*" onclick="multiplicar()"> </td>
+            
+            </tr>
+             <tr>
+                <td><input type="button" class="numero" name="num0" id="num0" value="0" onclick="display_numeros(0)"> </td>
+               <td><input type="button" class="numero" name="coma" id="coma" value="," onclick="display_numeros(,)"> </td>
+                <td><input type="button" class="numero" name="division" id="division" value="/" onclick="dividir()"> </td>
+               <td><input type="button" class="numero" name="operar" id="operar" value="GO" onclick="igual()"> </td>
+            </tr>
+        
+        
+        
+        
+        </table>
+        <script>
+            document.getElementById("display").value=0;
+            
+        </script>
+    
+    
+    </body>
+
+
+
+
+
+
+</html>

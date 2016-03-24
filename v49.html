@@ -1,0 +1,59 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="iso-8859-1">
+        <title>video 49</title>
+        <style>
+            #titulo{margin-left: 150px;}
+            
+            #foto p{background-color: #000;
+                    color: #fff;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            width: 300px;}
+            
+            h1{ text-align: center;}
+        
+        
+        </style>
+        <script src="jquery-2.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#titulo").hide();
+                $("#foto img").width(60).height(40).click(
+                    function (){
+                        $(this).animate({
+                            marginLeft:"150px",
+                            width:"300px",
+                            height:"200px"
+                        },1500,function(){
+                            $("#titulo").fadeIn(1000).delay(1000).fadeOut(1000);
+                        });/*termina animate*/
+                    
+                        $(this).animate({
+                            marginLeft:"0px",
+                            width:"60px",
+                            height:"40px"
+                            
+                        },1500);
+                    
+                    }
+                );
+                
+            });
+        </script>
+        
+        
+    </head>
+    <body>
+        <h1>Prueba Imagen</h1>
+        <div id="foto">
+            <img src="images/fresa.jpg" width="300" height="200" id="imagen1">
+            <p id="titulo">Fresa</p>
+            
+        </div>
+        
+    </body>
+    
+</html>
