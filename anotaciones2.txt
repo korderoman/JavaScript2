@@ -88,7 +88,18 @@ hover()
 stop()
 preloader()
 
+preventDefault(): deshabilita el comportamiento original del elemento
+retrun false es otra forma de anular el comportamiento inicial
 
+Ventanas emergentes (v53 y v54)
+función open(direccion,identificacion,tamaño ancho y alto)
+
+
+Iframes: hay algunos iframes que no salen porque no son del tamaño mínimo
+Al parecer fancybox ya no trabaja con chrome recomiendan lightbox
+Menus Animados
+
+/********video 56 esta en dansdom***///
 
 /******************************************/
 FORMULARIOS
@@ -96,4 +107,8 @@ Se accede a la información  de un elemento de formulario
 
 Siqueremos acceder a todos los puntos de un formulario se identifica por input, pero como objeto jquery es ":" ejemplo si queremos acceder a todos los elementos texto $(":text)(video 57)
 checked() sirve para verificar por casillas de texto
+
+
+
+
 

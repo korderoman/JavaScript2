@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Fotos con FancyBox</title>
-    <link rel="stylesheet" href="css/site.css">
+     <script src="../jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/site.css" media="screen">
     <link rel="stylesheet" href="../fancybox2/source/jquery.fancybox.css">
-    <script src="../jquery-2.2.1.min.js"></script>
+   
     <script src="../fancybox2/source/jquery.fancybox.js"</script>
     <script>
         $(document).ready(function(){
             
             $("#galeria a").fancybox({
-                overlayColor: "#797e79",
+                overlayColor: '#797e79',
                 overlayOpacity: .6,
-                transitionIn:"elastic",
-                transitionOut:"elastic",
+                transitionIn:'elastic',
+                transitionOut:'elastic',
                 
-                titlePosition:"Outside",
+                titlePosition:'Outside',
                 
-                cyclic:true,
+               cyclic:true,
             });
         });
 
@@ -48,4 +49,3 @@
 
 </body>
 </html>
-
