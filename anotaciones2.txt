@@ -114,7 +114,7 @@ isNaN
 en formularios disabled deshabilita cualquier acción sobre el formulario
 
 
-jquery validation plugin
+jquery validation plugin el video 63 se aprecia eso. se usa la función validate() y además debe identificarse los campos del formulario que requieren ser llenados de forma obligatoria asignando una clase required, es necesario revisar la api del plugin para  revisar como se hacen las validaciones.Sin embargo cuando se desea hacer más de una vlaidación por campo se debe modificar los parámetros (v64)
 
 
 
