@@ -111,7 +111,10 @@ submit(): revisa alguna condición o realiza una instrucción al presionar el bo
 Analizar el parámetro return
 blur():  ejecuta una accion cuando pierde el foco
 isNaN
+en formularios disabled deshabilita cualquier acción sobre el formulario
 
+
+jquery validation plugin
 
 
 
