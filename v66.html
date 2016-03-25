@@ -99,6 +99,15 @@ form .indent, #submit {
   margin-left: 0;
 }
 
+    #form_registro label.error{
+        font-size: 0.8em;
+        color: red;
+        font-weight: bold;
+        display: block;
+        margin-left: 215px;
+        
+    }
+
 
 
 </style>
@@ -112,7 +121,8 @@ $(document).ready(function() {
         rules:{
             e_mail: {required:true, email:true},
               confirma:{
-                equalTo:"#password"
+               //el campo confirma ede ser igual que password
+                  equalTo:"#password"
             }
         },//cierre de reglas
         messages:{
@@ -122,15 +132,18 @@ $(document).ready(function() {
             },
             password:{
                 required:true,
-                rangelength:[8,16]
+                rangelength:"Entre 8 y 16 caracteres"
             },
+            confirma:{
+                equalTo:"No coinciden los campos"
+            }
             
           
             
         },//cierre de mensajes
         
         errorPlacement: function(error,element){
-          if(element.is("radio")|| element.is("checkbox")){
+          if(element.is(":radio")|| element.is(":checkbox")){
               error.appendTo(element.parent());
           }else {
               error.insertAfter(element);
@@ -153,7 +166,7 @@ $(document).ready(function() {
 		<form name="form_registro" id="form_registro">
 			<div>
 				<label for="nombre" class="label">NOMBRE </label>
-				<input name="nombre" type="text" id="nombre"  >
+				<input name="nombre" type="text" id="nombre" class="required" title="Escribe un nombre"  >
 			</div>
 			<div>
 				<label for="email" class="label">E-mail </label>
@@ -168,7 +181,7 @@ $(document).ready(function() {
 				<input name="confirma" type="password" id="confirma">
 			</div>
 			<div><span class="label">aficiones</span>
-				<input name="hobby" type="checkbox" id="comer" value="comer" >
+				<input name="hobby" type="checkbox" id="comer" value="comer" class="required" title="Seleccione al menos un elemento" >
 				Comer
 				<input name="hobby" type="checkbox" id="Beber" value="Beber">
 				<label for="Beber">Beber</label>
@@ -194,7 +207,7 @@ $(document).ready(function() {
 			</div>
 			<div class="labelBlock">¿DESEAS RECIBIR CORREO BASURA DE NUESTRA PARTE? </div>
 			<div class="indent">
-				<input  type="radio" name="spam" id="yes" value="yes" >
+				<input  type="radio" name="spam" id="yes" value="yes" class="required" title="Selecciona  una opción" >
 				<label for="si">Sí</label>
 				<input type="radio" name="spam" id="Por_supuesto" value="Por_supuesto">
 				<label for="definitely">Por supuesto</label>
