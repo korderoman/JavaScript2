@@ -1,0 +1,11 @@
+Ajax
+Ajax se empezó a usar en google porque dota a las páginas web un comportamiento típico de una aplicaciṕn de escritorio, eso quiere decir que cuando desde una web hacemos un pedido a un servidor, pues la respuesta del servidor no necesita que se recargue la eb completo sino se agregará a la sección solicitada.
+
+Asincrono significa que puedes enviar varias peticiones a la vez, 
+
+Ventajas:
+Mostrar nuevo contenido HTML, sin recargar la pagin
+Enviar un formulario y mostrar una respuesta indemdiatamente
+Hacer login en una página web sin abandonar la misma.
+Mostrar resultados automáticos de encuestas.
+Buscar información en una BBDD y ver los resultaods inmediatamente (carlo de a compra.)
