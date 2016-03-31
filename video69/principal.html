@@ -30,8 +30,8 @@
 
 $(document).ready(function() {
     $("#noticias a").click(function(){
-        
-        $("#contenidos_externos").load("deportivas.html");
+        var url=$(this).attr("href");
+        $("#contenidos_externos").load(url +" #noticia");
         return false; //inhabilitamos el comportamiento por defecto de los enlaces
     });
 

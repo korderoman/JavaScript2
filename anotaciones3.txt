@@ -30,3 +30,16 @@ mi_var.open("GET","tienda.php?ID_producto=45");
 4. Recibir la respuesta
     a.La respuesta está formada por diferentes piezas de información: estado de la respuesta (código), texto de respuesta, XML de respuesta, HTML de respuesta, JSON de respuesta.
     b. La mayoría de las veces se recibirá un texto de respuesta que se gestionará utilizando la propiedad responseText del objeto XHR.
+    
+    La función load nos permite no sólo cargar toda una página sino podemos indicarle que parte de la página se desea cargar. (v69)
+    
+    
+    V70----- Uso de las funciones get() y post()
+    
+     Son los encargados de realizar una petición al servidor y procesar dicha información.
+     Su sintaxis:
+     
+     $.get(url,datos_enviar,funcion_procesa_respuesta).
+     
+     $.post(url,datos_enviar, funcion_procesa_respuesta)
+     funcion submit
