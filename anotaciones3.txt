@@ -9,3 +9,24 @@ Enviar un formulario y mostrar una respuesta indemdiatamente
 Hacer login en una página web sin abandonar la misma.
 Mostrar resultados automáticos de encuestas.
 Buscar información en una BBDD y ver los resultaods inmediatamente (carlo de a compra.)
+
+
+Pasos para enviar petición al Servidor
+
+1.Crear instancia de XMLHttpRequest --> var mi_var=new XMLHttpRequest();
+
+2. Utilizar el método open() del objeto XHR para específicar que petición se enviará al servidor y dónde irá la petición dentro del servidor:
+
+a. Dos formas de enviar la información al servidor:
+a.1- GET: la información de la petición se envía utilizando la URL del navegador como medio. Utilizado habitualmente para recibir y procesar respuesta del servidor.
+a.2-POST: Utilizado habitualmente para actualizar información alojada en el servidor (Actualizaciones en BD). Se debe utilizar método send() del objeto XHR.
+
+b. Especificaremos la página alojada en el servidor encargada de procesar la información:
+mi_var.open("GET","tienda.php?ID_producto=45");
+
+3.Crear una función JavaScript que gestione la respuesta.
+ a. Modificación del DOM.
+
+4. Recibir la respuesta
+    a.La respuesta está formada por diferentes piezas de información: estado de la respuesta (código), texto de respuesta, XML de respuesta, HTML de respuesta, JSON de respuesta.
+    b. La mayoría de las veces se recibirá un texto de respuesta que se gestionará utilizando la propiedad responseText del objeto XHR.
