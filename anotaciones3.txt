@@ -39,7 +39,17 @@ mi_var.open("GET","tienda.php?ID_producto=45");
      Son los encargados de realizar una petición al servidor y procesar dicha información.
      Su sintaxis:
      
-     $.get(url,datos_enviar,funcion_procesa_respuesta).
+     $.get(url,datos_enviar,funcion_procesa_respuesta).--->sirve para consultas
      
-     $.post(url,datos_enviar, funcion_procesa_respuesta)
+     $.post(url,datos_enviar, funcion_procesa_respuesta)---->sirve para hacer cambios, agregar, borrar, modificar.
      funcion submit
+     
+     
+     
+     En el v70 y v71 hay una acotación, todo el proceso es correcto sin embargo no se puede obtener una respuesta adecuada sino se tiene un servidor, probaremos con un servidor remoto.
+     
+     serialize(): revisar función
+     
+     
+     video 72
+     Funcion error()

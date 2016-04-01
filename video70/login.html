@@ -33,19 +33,20 @@ $(document).ready(function() {
         //inicio del literal
         var datosFormulario={usuario:$("#usuario").val(),
                             contra:$("#contra").val()}
-        $.get("login.php",datosFormulario,procesarDatos);
+        $.get("login.php", datosFormulario, procesarDatos);
         //Fin del Literal---> paquete que se envía al servidor
         
         return false; //para que no abra en otra ventana que es el comportamiento natural del submit.
     });
-			
-}); 
-    function procesarDatos(datos_devueltos){
+    
+     function procesarDatos(datos_devueltos){
         if(datos_devueltos=="autorizado"){
             //esto es ajax
-            $("#contenidos_externos").html("<p>Usuario correcto</p>")
-        } else{$("#contenidos_externos").html("<p>Usuario no autorizado</p>")}
+            $("#contenidos_externos").html("<p>Usuario correcto</p>");} else{$("#contenidos_externos").html("<p>Usuario no autorizado</p>");}
     }
+			
+}); 
+   
 </script>
 </head>
 <body>
